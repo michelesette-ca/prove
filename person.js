@@ -8,12 +8,10 @@ class Person {
         this.age = age;
     }
     getDetails() {
-        let risultato = `il nome è ${this.name}, il cognome è ${this.surname} l'età è: ${this.age}`;
-        return risultato;
+        return `il nome è ${this.name}, il cognome è ${this.surname} l'età è: ${this.age}`;
     }
-    getDenomination() {
-        let denomination = `${this.name} ${this.surname}`.toUpperCase();
-        return denomination;
+    get denomination() {
+        return `${this.name} ${this.surname}`.toUpperCase();
     }
 }
 exports.Person = Person;

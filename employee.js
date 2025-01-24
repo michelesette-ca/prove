@@ -24,8 +24,8 @@ class Employee extends person_1.Person {
         this.department = department;
     }
     getDetails() {
-        let dettaglio = `${this.name}, ${this.surname}, ${this.age}, ${this.position}, ${this.department}`;
-        return dettaglio;
+        //  string = `${this.name}, ${this.surname}, ${this.age}, ${this.position}, ${this.department}`
+        return super.getDetails() + `${this.position}, ${this.department}`;
     }
     performTask(task) {
         return __awaiter(this, void 0, void 0, function* () {

@@ -1,14 +1,12 @@
 export class Person {
 
-    constructor(public name: string, public surname: string, public age: number){}
+    constructor(private name: string, private surname: string, public age: number){}
 
-     getDetails(){
-        let risultato: string = `il nome è ${this.name}, il cognome è ${this.surname} l'età è: ${this.age}`
-        return risultato;
+    public getDetails(){
+        return `il nome è ${this.name}, il cognome è ${this.surname} l'età è: ${this.age}` 
     }
 
-    public getDenomination(){
-        let denomination: string = `${this.name} ${this.surname}`.toUpperCase();
-        return denomination;
+    get denomination(){
+        return `${this.name} ${this.surname}`.toUpperCase();  
     }
 }

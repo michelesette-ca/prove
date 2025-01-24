@@ -4,9 +4,8 @@ interface Contractor {
 }
 
 
-export function hireContractor(c: Contractor): string {
-    let x: string;
-    return x = c.companyName, c.hourlyRate.toString();
+export function hireContractor(c: Contractor): string { 
+    return `l'azienda è: ${c.companyName} e la paga oraria è: ${c.hourlyRate.toString()}`;
 }
 
 export let contractor: Contractor = {
@@ -14,4 +13,4 @@ export let contractor: Contractor = {
     hourlyRate: 30,
 };
 
-console.log(contractor.companyName, contractor.hourlyRate);
+// console.log(contractor.companyName, contractor.hourlyRate);

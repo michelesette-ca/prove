@@ -12,8 +12,8 @@ export class Employee extends Person {
     }
 
     override getDetails() {
-        let dettaglio: string = `${this.name}, ${this.surname}, ${this.age}, ${this.position}, ${this.department}`
-        return dettaglio;
+        //  string = `${this.name}, ${this.surname}, ${this.age}, ${this.position}, ${this.department}`
+        return super.getDetails() + `${this.position}, ${this.department}`
     }
 
     async performTask(task: string | string[]) {
